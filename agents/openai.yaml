@@ -1,0 +1,8 @@
+﻿interface:
+  display_name: "007AI Batch Images"
+  short_description: "Batch image generation via 007AI models"
+  brand_color: "#7C3AED"
+  default_prompt: "Use $007ai-image-skill to generate images in batches with my selected model, size, count, and prompt."
+
+policy:
+  allow_implicit_invocation: true

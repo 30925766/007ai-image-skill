@@ -1,0 +1,746 @@
+{
+  "models": [
+    {
+      "id": "banana_2_z_yb",
+      "display_name": "banana_2_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_2_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9",
+        "1:4",
+        "4:1",
+        "1:8",
+        "8:1"
+      ]
+    },
+    {
+      "id": "banana_2_2k_z_yb",
+      "display_name": "banana_2_2k_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_2_2k_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9",
+        "1:4",
+        "4:1",
+        "1:8",
+        "8:1"
+      ]
+    },
+    {
+      "id": "banana_2_4k_z_yb",
+      "display_name": "banana_2_4k_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_2_4k_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9",
+        "1:4",
+        "4:1",
+        "1:8",
+        "8:1"
+      ]
+    },
+    {
+      "id": "banana_pro_1k_z_yb",
+      "display_name": "banana_pro_1k_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_pro_1k_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "banana_pro_2k_z_yb",
+      "display_name": "banana_pro_2k_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_pro_2k_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "banana_pro_4k_z_yb",
+      "display_name": "banana_pro_4k_z_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "banana_pro_4k_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "nano-banana-2-g_yb",
+      "display_name": "nano-banana-2-g_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "nano-banana-2-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9",
+        "1:4",
+        "4:1",
+        "1:8",
+        "8:1"
+      ]
+    },
+    {
+      "id": "nano-banana-fast-g_yb",
+      "display_name": "nano-banana-fast-g_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "nano-banana-fast-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "nano-banana-g_yb",
+      "display_name": "nano-banana-g_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "nano-banana-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "nano-banana-pro-g_yb",
+      "display_name": "nano-banana-pro-g_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "nano-banana-pro-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "nano-banana-pro-vt-g_yb",
+      "display_name": "nano-banana-pro-vt-g_yb",
+      "family": "nano-banana",
+      "transport": "video-async",
+      "api_model": "nano-banana-pro-vt-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9"
+      ]
+    },
+    {
+      "id": "gpt_image2_1k_hi_z_yb",
+      "display_name": "gpt_image2_1k_hi_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_1k_hi_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_1k_lo_z_yb",
+      "display_name": "gpt_image2_1k_lo_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_1k_lo_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_1k_me_z_yb",
+      "display_name": "gpt_image2_1k_me_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_1k_me_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_2k_hi_z_yb",
+      "display_name": "gpt_image2_2k_hi_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_2k_hi_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_2k_lo_z_yb",
+      "display_name": "gpt_image2_2k_lo_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_2k_lo_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_2k_me_z_yb",
+      "display_name": "gpt_image2_2k_me_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_2k_me_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_4k_hi_z_yb",
+      "display_name": "gpt_image2_4k_hi_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_4k_hi_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_4k_lo_z_yb",
+      "display_name": "gpt_image2_4k_lo_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_4k_lo_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image2_4k_me_z_yb",
+      "display_name": "gpt_image2_4k_me_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image2_4k_me_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-2K-z-yb",
+      "display_name": "gpt-image-2-2K-z-yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-2K-z-yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-4K-z-yb",
+      "display_name": "gpt-image-2-4K-z-yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-4K-z-yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-g_yb",
+      "display_name": "gpt-image-2-g_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-vip-g_yb",
+      "display_name": "gpt-image-2-vip-g_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-vip-g_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-z-yb",
+      "display_name": "gpt-image-2-z-yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-z-yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_z_yb",
+      "display_name": "gpt_image_2.5_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_g",
+      "display_name": "gpt_image_2.5_g",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_g",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_flare_z_yb",
+      "display_name": "gpt_image_2.5_flare_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_flare_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_flare_g",
+      "display_name": "gpt_image_2.5_flare_g",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_flare_g",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_sunburst_z_yb",
+      "display_name": "gpt_image_2.5_sunburst_z_yb",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_sunburst_z_yb",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt_image_2.5_sunburst_g",
+      "display_name": "gpt_image_2.5_sunburst_g",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt_image_2.5_sunburst_g",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-g",
+      "display_name": "gpt-image-2-g",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-g",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-z",
+      "display_name": "gpt-image-2-z",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-z",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gpt-image-2-vip-g",
+      "display_name": "gpt-image-2-vip-g",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gpt-image-2-vip-g",
+      "size_mode": "ratio",
+      "allowed_ratios": [
+        "1:1",
+        "5:4",
+        "9:16",
+        "21:9",
+        "16:9",
+        "3:2",
+        "4:3",
+        "4:5",
+        "3:4",
+        "2:3"
+      ]
+    },
+    {
+      "id": "gptimage2.6_gr",
+      "display_name": "gptimage2.6_gr",
+      "family": "gpt-image-2",
+      "transport": "video-async",
+      "api_model": "gptimage2.6_gr",
+      "size_mode": "ratio",
+      "request_schema": "gr-flat",
+      "allowed_image_sizes": [
+        "1K"
+      ],
+      "allowed_output_formats": [
+        "png",
+        "gif",
+        "svg"
+      ],
+      "allowed_ratios": [
+        "auto",
+        "1:1",
+        "16:9",
+        "9:16",
+        "4:3",
+        "3:4",
+        "3:2",
+        "2:3",
+        "5:4",
+        "4:5",
+        "21:9",
+        "9:21",
+        "1:3",
+        "3:1",
+        "2:1",
+        "1:2"
+      ]
+    }
+  ]
+}

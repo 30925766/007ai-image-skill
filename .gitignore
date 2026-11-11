@@ -1,0 +1,13 @@
+007ai-image-key.json
+imgbb-api-key.json
+.config/
+images/
+scripts/__pycache__/
+__pycache__/
+*.pyc
+*.bak
+.env
+.env.*
+dist/
+*.zip
+*.skill
