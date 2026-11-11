@@ -614,7 +614,10 @@ def render_markdown_result(result: dict) -> str:
 def open_folder_for_file(file_path: str) -> None:
     target = Path(file_path).resolve()
     try:
-        subprocess.Popen(["explorer", "/select,", str(target)])
+        if sys.platform == "darwin":
+            subprocess.Popen(["open", "-R", str(target)])
+        else:
+            subprocess.Popen(["explorer", "/select,", str(target)])
     except Exception:
         pass
 

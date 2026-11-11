@@ -1,5 +1,7 @@
 # 007AI Image Skill
 
+当前版本：**1.1** · [下载分发包](https://github.com/30925766/007ai-image-skill/releases/download/v1.1/007ai-image-skill-v1.1.zip)
+
 通过 007AI 异步图片接口完成文生图、参考图编辑和批量生图的 Codex Skill，支持 GPT Image、Nano Banana 及专用模型适配。
 
 **本仓库为无内置密钥、无密钥兜底的分发版。** 使用前必须配置自己的 007AI API Key；需要上传参考图时，还需配置自己的 imgBB API Key。
@@ -16,12 +18,14 @@
 
 ## 运行环境
 
-- Windows 与 PowerShell：仓库提供的统一启动和环境初始化入口面向 Windows。
+- Windows 与 PowerShell，或 macOS 与 Bash：分别提供启动和环境初始化入口。
 - Python 3.10 或更高版本：仅使用标准库，无需安装 pip 依赖。
 - 可访问 007AI 服务；参考图上传时需能访问 imgBB。
 - 使用 Git 安装时需先安装 Git；也可下载 ZIP 后手动解压安装。
 
-启动脚本会探测 Python 并保存本地运行环境配置。未找到可用 Python 时，会尝试通过 `winget` 安装 Python 3.12。
+Windows 启动脚本会探测 Python 并保存本地运行环境配置。未找到可用 Python 时，会尝试通过 `winget` 安装 Python 3.12。
+
+macOS 入口只检测 Python，不会自动安装软件；未找到 Python 3.10+ 时会提示安装后重试。可通过 `CODEX_007AI_PYTHON` 指定解释器路径。两种系统使用独立的运行环境配置文件。
 
 ## 安装
 
@@ -35,15 +39,24 @@ git clone https://github.com/30925766/007ai-image-skill.git "$env:USERPROFILE\.c
 
 目标目录需要不存在或为空。如果已安装此 skill，请先处理原目录，避免覆盖本机配置。
 
+macOS 在终端执行：
+
+```bash
+mkdir -p "$HOME/.codex/skills"
+git clone https://github.com/30925766/007ai-image-skill.git "$HOME/.codex/skills/007ai-image-skill"
+```
+
 ### 使用分发包
 
-下载仓库中的 [无 key 兜底分发包](007ai-image-skill-no-key-2026-11-11.zip)，将其中的 `007ai-image-skill` 目录解压到：
+下载 [1.1 无 key 兜底分发包](https://github.com/30925766/007ai-image-skill/releases/download/v1.1/007ai-image-skill-v1.1.zip)，将其中的 `007ai-image-skill` 目录解压到：
 
 ```text
 %USERPROFILE%\.codex\skills\007ai-image-skill
 ```
 
 确保 `SKILL.md` 位于该目录根部，不要多嵌套一层同名目录。
+
+macOS 安装路径为 `~/.codex/skills/007ai-image-skill`。
 
 ## 首次配置
 
@@ -67,6 +80,17 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_007ai_image.ps
 ```
 
 `--check-config` 仅检查本地配置是否存在，不代表密钥已通过服务端验证。`--check-models` 会访问服务端模型接口，不创建生图任务。
+
+### macOS 首次配置
+
+```bash
+cd "$HOME/.codex/skills/007ai-image-skill"
+bash scripts/run_007ai_image.sh --set-api-key 'YOUR_007AI_API_KEY'
+bash scripts/run_007ai_image.sh --check-config
+bash scripts/run_007ai_image.sh --check-models
+```
+
+下文所有 PowerShell 示例在 macOS 上均可将 `powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_007ai_image.ps1` 替换为 `bash scripts/run_007ai_image.sh`，后续参数保持一致，文件路径改为本机路径。无需为 Shell 脚本添加执行权限。图片生成成功后，macOS 使用 Finder 定位图片。
 
 ### 配置参考图上传
 
@@ -164,6 +188,13 @@ powershell -NoProfile -ExecutionPolicy Bypass -File .\scripts\run_007ai_image.ps
 仓库提供的 `.gitignore` 用于避免意外新增跟踪，但无法移除已提交的敏感文件；如果曾提交过真实密钥，应移除敏感内容并更换密钥。
 
 ## 更多说明
+
+### 1.1 更新
+
+- 新增 macOS Bash 启动与 Python 环境检测入口。
+- macOS 使用独立的 `.config/runtime-macos.json`，不覆盖 Windows 运行环境配置。
+- macOS 生成成功后通过 Finder 定位图片。
+- 保持无内置密钥、无密钥兜底的分发方式。
 
 - [Skill 完整工作流](SKILL.md)
 - [分发说明](README-DISTRIBUTION.md)

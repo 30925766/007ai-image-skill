@@ -9,7 +9,7 @@ description: 当用户需要通过 007AI 异步图片接口批量生成图片、
 
 ## 固定交互顺序
 
-1. 首次使用或运行环境不确定时，先通过统一入口执行环境自检：scripts/run_007ai_image.ps1。
+1. 首次使用或运行环境不确定时，先通过当前系统的入口执行环境自检：Windows 使用 `scripts/run_007ai_image.ps1`；macOS 使用 `bash scripts/run_007ai_image.sh`。后文所有 `.ps1` 命令在 macOS 上均替换为该 Shell 入口，后面的参数保持一致。
 2. 环境可用后先运行 --check-config（包含 imgBB 配置状态）；有参考图时，在提交前运行 `--model <ID> --image <参考图> --check-reference`。这只检查配置和输入，不上传、不创建任务，也不代表密钥已通过服务端验证。模型生成前可运行 --check-models 进行无计费的服务端模型校验。
 3. 如果用户已经提供提示词，缓存提示词，不重复询问。
 4. 每次进入模型选择阶段都必须实际执行 `--list-models --format markdown` 获取本次完整模型列表，并按下述固定格式逐项完整展示，让用户选择模型 ID；不得跳过命令、凭记忆列模型或仅展示部分模型。
@@ -111,6 +111,7 @@ banana_2_z_yb、banana_2_2k_z_yb、banana_2_4k_z_yb、banana_pro_1k_z_yb、banan
 - API key 文件：~/.codex/skills/007ai-image-skill/007ai-image-key.json。
 - 基础配置：~/.codex/skills/007ai-image-skill/.config/config.json。
 - 运行时配置：~/.codex/skills/007ai-image-skill/.config/runtime.json。
+- macOS 通过 `scripts/bootstrap_environment.sh` 检测 Python 3.10+，每次启动重新验证，并写入独立的 `.config/runtime-macos.json`，不读取或覆盖 Windows 的 `runtime.json`。缺少 Python 时提示安装后重试；可用 `CODEX_007AI_PYTHON` 指定解释器路径。
 - API key 缺失时，只引导用户到 https://007.007ai.cc/ 获取并通过 --set-api-key 保存。
 - 分发包不包含 API key、运行时配置或已生成图片；首次使用必须由用户自行提供 key，不使用任何内置或兜底 key。
 - 不输出完整 API key、原始 Base64 或完整请求 payload。
@@ -141,6 +142,15 @@ banana_2_z_yb、banana_2_2k_z_yb、banana_2_4k_z_yb、banana_pro_1k_z_yb、banan
 - `unsupported request field: metadata` 或 `input_reference` 是接口字段不兼容，不是 Base64 拒绝；不能据此上传图床或更换模型重试。明确的 Base64 拒绝且未取得任务 ID 时才允许一次图床回退。
 
 ## 常用命令
+
+macOS 入口（无需安装 PowerShell，也无需为脚本添加执行权限）：
+
+```bash
+bash "$HOME/.codex/skills/007ai-image-skill/scripts/run_007ai_image.sh" --check-config
+bash "$HOME/.codex/skills/007ai-image-skill/scripts/run_007ai_image.sh" --list-models --format markdown
+```
+
+以下为 Windows 命令；macOS 使用上述 Shell 入口并传递相同参数。
 
 列出全部模型：
 
