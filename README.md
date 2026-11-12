@@ -1,7 +1,5 @@
 # 007AI Image Skill
 
-当前版本：**1.1** · [下载分发包](https://github.com/30925766/007ai-image-skill/releases/download/v1.1/007ai-image-skill-v1.1.zip)
-
 通过 007AI 异步图片接口完成文生图、参考图编辑和批量生图的 Codex Skill，支持 GPT Image、Nano Banana 及专用模型适配。
 
 **本仓库为无内置密钥、无密钥兜底的分发版。** 使用前必须配置自己的 007AI API Key；需要上传参考图时，还需配置自己的 imgBB API Key。
@@ -48,7 +46,7 @@ git clone https://github.com/30925766/007ai-image-skill.git "$HOME/.codex/skills
 
 ### 使用分发包
 
-下载 [1.1 无 key 兜底分发包](https://github.com/30925766/007ai-image-skill/releases/download/v1.1/007ai-image-skill-v1.1.zip)，将其中的 `007ai-image-skill` 目录解压到：
+下载 `007ai-image-skill` ，将其中的 `007ai-image-skill` 目录解压到：
 
 ```text
 %USERPROFILE%\.codex\skills\007ai-image-skill
